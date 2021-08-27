@@ -195,12 +195,12 @@ Elevation for the area was pulled from USGS via the https://apps.nationalmap.gov
 .The 1-meter elevation coverage in the Austin region is shown here.
 image::images/SimBlocks/SimBlocks - ISG2 - USGS.png[width=800,align="center"]
 
-The data used for Austin was pulled from the USGS Web Coverage Service (WCS) found at https://elevation.nationalmap.gov/arcgis/services/3DEPElevation/ImageServer/WCSServer (Note: The Timeout setting for this site had to be increased to 60 seconds to prevent timeout errors during initialization and download)
+The data used for Austin was pulled from the USGS Web Coverage Service (WCS) found at the WCS service endpoint  https://elevation.nationalmap.gov/arcgis/services/3DEPElevation/ImageServer/WCSServer (Note: The Timeout setting for this site had to be increased to 60 seconds to prevent timeout errors during initialization and download) (Note2: All requests to the service endpoint must be properly formated WCS requests such as https://elevation.nationalmap.gov/arcgis/services/3DEPElevation/ImageServer/WCSServer?VERSION=1.1.2&REQUEST=GetCapabilities&SERVICE=WCS )
 
 [NOTE]
 ._Link Error_
 ===================
-This link returns a 404. Either refer to the Download server (above image) or fix the link. It is also necessary to descibe which timeout. Is it a browser setting or something else? In my case, the response was so fast that I don't think any timeout change would matter. It would be better to make a "Note" this way rather than in-line in the text.
+This link returns a 404. Either refer to the Download server (above image) or fix the link. It is also necessary to descibe which timeout. Is it a browser setting or something else? In my case, the response was so fast that I don't think any timeout change would matter. It would be better to make a "Note" this way rather than in-line in the text. (Resolved)
 ===================
 
 
